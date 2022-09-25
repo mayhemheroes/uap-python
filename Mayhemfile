@@ -1,0 +1,10 @@
+image: ghcr.io/capuanob/uap-python-fuzz:latest
+project: uap-python
+target: uap-python-fuzz
+duration: 600
+testsuite:
+    - file://tests
+
+cmds:
+  - cmd: /uap/fuzz_parsers.py
+    libfuzzer: true
