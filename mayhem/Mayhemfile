@@ -4,5 +4,5 @@ testsuite:
     - file://tests
 
 cmds:
-  - cmd: /uap/fuzz_parsers.py
+  - cmd: /uap/mayhem/fuzz_parsers.py
     libfuzzer: true
