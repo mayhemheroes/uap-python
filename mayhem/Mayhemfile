@@ -1,0 +1,8 @@
+project: uap-python
+target: uap-python-fuzz
+testsuite:
+    - file://tests
+
+cmds:
+  - cmd: /uap/mayhem/fuzz_parsers.py
+    libfuzzer: true
